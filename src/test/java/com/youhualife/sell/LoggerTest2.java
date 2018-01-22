@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @Slf4j
 public class LoggerTest2 {
     @Test
-    public void test1(){
+    public void test(){
         log.debug("debug...");
         log.info("info...");
         log.error("error...");
