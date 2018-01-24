@@ -40,18 +40,18 @@ public class ProductServiceImplTest {
 
     @Test
     public void save() throws Exception {
-//        ProductInfo productInfo = new ProductInfo();
-//        productInfo.setProductId("123457");
-//        productInfo.setProductName("皮皮虾");
-//        productInfo.setProductPrice(new BigDecimal(3.2));
-//        productInfo.setProductStock(100);
-//        productInfo.setProductDescription("很好吃的虾");
-//        productInfo.setProductIcon("http://xxxxx.jpg");
-//        productInfo.setProductStatus(ProductStatusEnum.UP.getCode());
-//        productInfo.setCategoryType(2);
+        ProductInfo productInfo = new ProductInfo();
+        productInfo.setProductId("123456");
+        productInfo.setProductName("八宝粥");
+        productInfo.setProductPrice(new BigDecimal(3.2));
+        productInfo.setProductStock(100);
+        productInfo.setProductDescription("腊八喝的粥");
+        productInfo.setProductIcon("http://xxxxx.jpg");
+        productInfo.setProductStatus(ProductStatusEnum.UP.getCode());
+        productInfo.setCategoryType(1);
 
-        ProductInfo productInfo =productService.findOne("123457");
-        productInfo.setProductDescription("测试测试");
+//        ProductInfo productInfo =productService.findOne("123457");
+//        productInfo.setProductDescription("测试测试");
         ProductInfo result=productService.save(productInfo);
         Assert.assertNotNull(result);
     }
