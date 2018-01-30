@@ -10,3 +10,11 @@ spring:
     default-property-inclusion: non_null
 server:
   context-path: /sell
+wechat:
+#  mpAppId: wxab572a1f826ef113
+#  mpAppSecret: ff60ccde9ba12f08803314e6529e6a75
+  mpAppId: wx5f6d02d5a186fc0d
+  mpAppSecret: 3f89ed05364f4b99496fce2ed43a82a0
+projectUrl:
+  wechatMpAuthorize: http://hunji.s1.natapp.cc
+  sell: http://hunji.s1.natapp.cc
